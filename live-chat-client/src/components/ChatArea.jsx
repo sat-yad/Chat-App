@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
 import MessageOther from "./MessageOther";
 import MessageSelf from "./MessageSelf";
 
-const ChatArea = ({ conversations }) => {
+const ChatArea = () => {
+  const [conversations, setConversations] = useState([
+    {
+      name: "Person1",
+      lastMessage: "last Message",
+      timeStamp: "Today",
+    },
+    {
+      name: "Person2",
+      lastMessage: "last Message",
+      timeStamp: "Today",
+    },
+    {
+      name: "Person3",
+      lastMessage: "last Message",
+      timeStamp: "Today",
+    },
+  ]);
   return (
     <div className="chatArea-container">
       {conversations.length > 0 ? (
         <div className="chatArea-header">
-          <p className="con-icon">{conversations[0].name[0]}</p>
+          <p className="cion-icon">{conversations[0].name[0]}</p>
           <div className="header-text">
-            <p className="con-title">{conversations[0].name}</p>
-            <p className="con-timeStamp">{conversations[0].timeStamp}</p>
+            <p className="cion-title">{conversations[0].name}</p>
+            <p className="cion-timeStamp">{conversations[0].timeStamp}</p>
           </div>
           <IconButton>
             <DeleteIcon />

@@ -104,7 +104,7 @@
     rgba(148, 199, 186, 0.134) 0px 3px 7px -3px;
 }
 .sb-conversations:hover {
-  background-color: rgba(34, 35, 36, 0.23);
+  background-color: rgba(54, 56, 57, 0.23);
 }
 .conversation-container {
   display: grid;
@@ -115,11 +115,15 @@
   margin: 8px;
   border-radius: 20px;
   color: white;
+  transition-duration: 0.5s;
   box-shadow: rgba(117, 169, 197, 0.059) 0px 3px 12px -2px,
     rgba(136, 196, 253, 0.327) 0px 3px 7px -3px;
 }
 .conversation-container:hover {
-  background-color: rgba(12, 43, 15, 0.249);
+  background-color: rgba(18, 62, 23, 0.212);
+}
+.conversation-container:active {
+  background-color: rgba(72, 103, 75, 0.488);
 }
 .other-text-content {
   background-color: #434242;
@@ -318,13 +322,15 @@
     rgba(26, 25, 25, 0.3) 0px 30px 60px -30px,
     rgba(49, 95, 120, 0.35) 0px -2px 6px 0px inset;
 }
-/* background-color: #3c3a3ae3; */
 .list-container {
   flex: 0.7;
   display: flex;
   flex-direction: column;
 }
 .list-container:hover {
+  background-color: rgba(5, 42, 57, 0.195);
+}
+.list-container:active {
   background-color: rgba(5, 42, 57, 0.195);
 }
 
@@ -357,7 +363,6 @@
   overflow: scroll;
   scrollbar-width: none;
   padding: 10px;
-  /* margin: 10px; */
 }
 
 .ug-list::-webkit-scrollbar {
@@ -379,5 +384,5 @@
   background-color: rgba(149, 196, 216, 0.195);
 }
 .list-tem:active {
-  background-color: rgb(59, 58, 58);
+  background-color: rgba(149, 194, 237, 0.363);
 }

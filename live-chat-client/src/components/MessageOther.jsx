@@ -8,10 +8,10 @@ const MessageOther = () => {
   return (
     <div className="other-message-container">
       <div className="conversation-container">
-        <p className="con-icon">{props1.name[0]}</p>
+        <p className="cion-icon">{props1.name[0]}</p>
         <div className="other-text-content">
-          <p className="con-title">{props1.name}</p>
-          <p className="con-lastMessage">{props1.message}</p>
+          <p className="cion-title">{props1.name}</p>
+          <p className="cion-lastMessage">{props1.message}</p>
           <p className="self-timeStamp">12:00am</p>
         </div>
       </div>
